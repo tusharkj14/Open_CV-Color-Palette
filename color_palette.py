@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from PIL import Image
 
-# str_name = ' '   # The name of the mage file from which the color palette is to be made. It is contained in an "images" folder in the same directory
+str_name = ' '   # The name of the mage file from which the color palette is to be made. It is contained in an "images" folder in the same directory
 src = cv2.imread('images/{}.jpg'.format(str_name))
 src2 = cv2.cvtColor(src,  cv2.COLOR_BGR2RGB)
 img = cv2.resize(src2, (780, 540),interpolation = cv2.INTER_NEAREST)
